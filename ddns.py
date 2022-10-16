@@ -72,6 +72,11 @@ while True:
 			break
 	if ip_success == False:
 		print(f'{get_time_str()} : IP UPDATE ERROR')
+		try:
+			time.sleep(int(config['INTERVAL']))
+		except:
+			print(f'{get_time_str()} : ERROR OCCURRED DURING SLEEP')
+			traceback.print_exc()
 		continue
 
 	print(f'{get_time_str()} : IP : {new_ip}')
