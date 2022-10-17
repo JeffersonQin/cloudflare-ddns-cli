@@ -19,3 +19,8 @@ Log to file:
 ```
 python ddns.py
 ```
+
+## Use script as daemon on mac
+
+Add `ddns-mac.sh` as start up app. Remember to make the default runner of the script as shell.
+
